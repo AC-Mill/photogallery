@@ -4,70 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
     <title>Photogallery</title>
 </head>
 <body>
-    <h1>TK Photography</h1>
-    <ul>
-        <li>About</li>
-        <li>Gallery</li>
-        <li>Contact</li>
-        <li>^ top</li>
-    </ul>
-    <h2>About</h2>
-    <img src="/images/TK.png" alt="man shooting photos with very nice camera" style="width: 128px;height: 128px;">
-
-Hello! 
-I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world. 
-Gallery
-Here are some highlights of my work. 
-The locations and year are in the caption. 
-
-Chile.png
-Chile, 2001
-
-Guatemala.png
-Guatemala, 1997
-
-Hawaii.png
-Hawaii, 2010
-
-Iran.png
-Iran, 1999
-
-Ireland.png
-Ireland, 2012
-
-Italy.png
-Italy, 2015
-
-Moab-Desert.png
-Moab Desert, 2020
-
-Rocky-Mountains.png
-Rocky Mountains, 2009
-
-Switzerland.png
-Switzerland, 2014
-
-UK.png
-UK, 2005
-
-USA.png
-USA, 2021
-
-Wyoming.png
-Wyoming, 2021
-Contact
-Please fill out this form and I’ll connect with you soon.
-
-Your contact information
-Name (Your full name)
-Email (Enter your email address)
-Message (What can I help you with?)
-Submit
-
-Copyright 2021 TK Photography
-
+    <header>
+        <h1>TK Photography</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#top">^<br>TOP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <img src="images/TK.png" alt="man shooting photos with very nice camera">
+            <h2 id="about">About</h2>
+            <p>Hello! <br>
+            I’m TK and I’m a photographer.<br> I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
+        </aside>
+        <article>
+            <h2 id="gallery">Gallery</h2>
+            <p>Here are some highlights of my work. 
+            The locations and year are in the caption.</p>
+        </article>
+        <div class="row">
+            <figure class="column">
+                <img src="images/Chile.png" alt="image of Chilean beach with tide.">
+                <figcaption class="top-left">Chile, 2001</figcaption>
+            </figure>
+            <figure class="column">
+                    <img src="images/Guatemala.png" alt="image of Guatamalan country with purple flowers leading down to a lake. Guatamalan mountains in the distance.">
+                    <figcaption class="top-left">Guatemala, 1997</figcaption>
+            </figure>
+            <figure class="column">
+                <img src="images/Hawaii.png" alt="Wide shot of lush Hawaiian costal mountain with a cloudy sky overhead.">
+                    <figcaption class="bottom-right" style="color:white">Hawaii, 2010</figcaption>
+            </figure>
+        </div>
+        <div class="row">
+            <figure class="column">
+                <img src="images/Iran.png" alt="Iranian desert with mixture of both red and yellow plants with mountains in the distance." class="longPic">
+                <figcaption class="top-left">Iran, 1999</figcaption>
+            </figure>
+            <figure class="column">
+                <img src="images/Ireland.png" alt="A very lush and somewhat foggy shot of an Irish countryside." class="longPic">
+                <figcaption class="bottom-right" style="color:white"> Ireland, 2012</figcaption>
+            </figure>
+            <figure class="column">
+                <img src="images/Italy.png" alt="A narrow shot between two trees of an Italian mountain with a beautifully blue lake at its base. There is a person in a canoe on the lake." class="longPic">
+                <figcaption class="bottom-left" style="color:white">Italy, 2015</figcaption>
+            </figure>
+        </div>    
+        <div class="row">
+            <figure class="column">
+                <img src="images/Moab-Desert.png" alt="A photo of a setting sun seen through an naturally made arch of stone. Mountains of similar stone can be seen in the near distance.">
+                <figcaption class="bottom-right" style="color:white">Moab Desert, 2020</figcaption>
+            </figure>
+            <figure class="column">
+                <img src="images/Rocky-Mountains.png" alt="A photo of jagged mountains piercing the sky above.">
+                <figcaption class="top-left">Rocky Mountains, 2009</figcaption>
+            </figure>
+            <figure class="column">
+                <img src="images/Switzerland.png" alt="An image depicting the endlessness of the Swiss moutains, with trees at its base.">
+                <figcaption class="bottom-left">Switzerland, 2014</figcaption>
+            </figure>
+        </div>
+        <div class="row">
+            <figure class="column">
+                <img src="images/UK.png">
+                <figcaption class="bottom-right" style="color:white">UK, 2005</figcaption>
+            </figure>
+            <figure class="column">
+                <img src="images/USA.png">
+                <figcaption class="top-left" style="color:white">USA, 2021</figcaption>
+            </figure>
+            <figure class="column">
+                <img src="images/Wyoming.png">
+                <figcaption class="top-left" style="color:white">Wyoming, 2021</figcaption>
+            </figure>
+        </div>
+    </main>
+    <section>
+        <h2 id="contact">Contact</h2>
+        <p>Please fill out this form and I’ll connect with you soon.</p>
+        <form>
+            <h2>Your contact information</h2>
+            <label>Name</label> <br>
+            <input type="text" placeholder="YOUR FULL NAME" class="fillOut"><br>
+            <label>Email</label> <br>
+            <input type="email" placeholder="ENTER YOUR EMAIL ADDRESS" class="fillOut"><br>
+            <label>Message</label> <br>
+            <input type="text" placeholder="WHAT CAN I HELP YOU WITH" class="fillOut"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <footer>
+        <p>Copyright 2021 TK Photography</p>
+    </footer>
 </body>
 </html>
