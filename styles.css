@@ -5,10 +5,6 @@ body {
     background-color: black;
 }
 
-header {
-    width: 1310px;
-}
-
 h1 {
     font-size: 40px;
     color: #007d7b;
@@ -17,12 +13,10 @@ h1 {
 }
 
 nav{ 
-    display: inline-block;
     margin: 20px -113px -10px 76px;
     float: right;
     clear: both;
 }
-
 
 nav ul li {
     display: inline-block;
@@ -58,6 +52,7 @@ aside h2{
     font-size: 40px;
     text-align: right;
     padding-right: 10px;
+    padding-top: 10px;
 }
 
 aside h2+p{
