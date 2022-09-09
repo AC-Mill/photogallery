@@ -169,12 +169,12 @@ footer {
     font-weight: bold;
 }
 
-.column {
+.stack {
     float: left;
     width: 26%;
 }
 
-.row::after {
+.group::after {
     content: "";
     clear: both;
     display: table;
